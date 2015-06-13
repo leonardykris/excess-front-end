@@ -22,14 +22,6 @@
                 </button>
                 <a class="navbar-brand" href="javascript:void(0)">Excess</a>
             </div>
-            <div class="navbar-collapse collapse navbar-responsive-collapse">
-                <form class="navbar-form navbar-right">
-                    <input type="text" class="form-control col-lg-8" placeholder="Search">
-                </form>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="javascript:void(0)">Contact Us</a></li>
-                </ul>
-            </div>
         </div>
 
         <!-- Modal content-->
@@ -44,9 +36,7 @@
                         <p>
                             Malaysians waste up to <b>8,000 tonnes</b> of food a day and we think this is absurd. Such amount of food could feed <b>6 million people</b>, but why it's not being done yet? Why are there still hungry children waiting to be fed in rural area then? Our solution tries to bring that number down by ensuring there's no valuable food being thrown away.
                         </p>
-                        <p>
-                            <a href="#">Join our cause.</a>
-                        </p>
+                        <p><a href="#">Join our cause.</a></p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default close-modal" data-dismiss="modal">Close</button>
@@ -58,19 +48,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <!-- <h1>Hello there</h1>
-                    
-                        <a href="javascript:void(0)" class="btn btn-default col-sm-12">Default</a>
-                        <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
-                        <a href="javascript:void(0)" class="btn btn-success">Success</a> -->
                     <h4 class="text-muted text-center heading">1 in 4 calories is never consumed, they're thrown away. We know they deserved a better place.</h4>
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            Basic panel
+                            <div class="clearfix">
+                                <img src="img/1-carrot.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">Carrots</h4>
+                                <p class="item-content">From <span>RM2.80</span> <span>(TESCO)</span></p>
+                                <a href="#" class="pull-right"><span class="mdi-content-add"></span></a>
+                            </div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="clearfix">
+                                <img src="img/1-asparagus.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">Asparagus</h4>
+                                <p class="item-content">From <span>RM2.80</span> <span>(TESCO)</span></p>
+                                <a href="#" class="pull-right"><span class="mdi-content-add"></span></a>
+                            </div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="clearfix">
+                                <img src="img/1-cabbage.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">Cabbage</h4>
+                                <p class="item-content">From <span>RM2.80</span> <span>(TESCO)</span></p>
+                                <a href="#" class="pull-right"><span class="mdi-content-add"></span></a>
+                            </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <!-- <div class="panel-heading">Panel heading</div> -->
                         <div class="panel-body">
                             Panel content
                         </div>
@@ -109,6 +116,14 @@
 
             $('.close-modal').click( function() {
                 $('span.mdi-action-favorite').removeClass('mdi-action-favorite').addClass('mdi-action-favorite-outline');              
+            });
+
+            $('.pull-right.mdi-content-add').click( function() {
+                $(this).removeClass('mdi-content-add').addClass('mdi-action-done');
+            });
+
+            $('.pull-right.mdi-action-done').click( function() {
+                $(this).removeClass('mdi-action-done').addClass('mdi-content-add');
             });
 
         </script>

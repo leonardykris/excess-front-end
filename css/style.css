@@ -28,27 +28,27 @@ body {
 }
 
 #cart {
-	position: absolute;
+	position: fixed;
 	right: 20px;
 	bottom: 20px;
 	z-index: 999;
 }
 
 #bottom-status {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	left:0px;
-	background-color: white;
+	background-color: #ddd;
 	height: 50px;
 	width: 100%;
 }
 
 #top-bg {
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 	background: transparent url("../img/pomegranate.jpg") no-repeat scroll center center / cover;
-	height: 250px;
+	height: 260px;
 	width: 100%;
 	z-index: -999;
 }
@@ -59,6 +59,31 @@ body {
 
 #modal {
 	margin-top: 60px;
+}
+
+.clearfix {
+	height: 100%;
+}
+
+.pull-left {
+	margin-right: 15px;
+}
+
+h4.item-title {
+	margin-top: 4px;
+	margin-bottom: 1px;
+}
+
+.item-content {
+	margin-bottom: 0px;
+}
+
+.pull-right {
+	position: relative;
+	top: -45px;
+	right: 0px;
+	margin-bottom: -64px;
+	transition: all 0.3s ease 0.4s;
 }
 
 ::-webkit-input-placeholder {
