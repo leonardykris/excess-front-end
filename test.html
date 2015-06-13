@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CDN -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet" >
         <!-- Local -->
         <link href="css/roboto.css" rel="stylesheet">
         <link href="css/material-fullpalette.css" rel="stylesheet">
@@ -15,22 +17,44 @@
         <!-- Navigation Bar -->
         <div class="navbar navbar-default">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" class="navbar-toggle" data-toggle="modal" data-target="#modal">
+                    <span class="mdi-action-favorite-outline"></span>
                 </button>
                 <a class="navbar-brand" href="javascript:void(0)">Excess</a>
             </div>
             <div class="navbar-collapse collapse navbar-responsive-collapse">
-                <!-- <form class="navbar-form navbar-right">
+                <form class="navbar-form navbar-right">
                     <input type="text" class="form-control col-lg-8" placeholder="Search">
-                </form> -->
+                </form>
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="javascript:void(0)">Contact Us</a></li>
                 </ul>
             </div>
         </div>
+
+        <!-- Modal content-->
+        <div class="modal fade" id="modal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close-modal" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Our stories</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Malaysians waste up to <b>8,000 tonnes</b> of food a day and we think this is absurd. Such amount of food could feed <b>6 million people</b>, but why it's not being done yet? Why are there still hungry children waiting to be fed in rural area then? Our solution tries to bring that number down by ensuring there's no valuable food being thrown away.
+                        </p>
+                        <p>
+                            <a href="#">Join our cause.</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default close-modal" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -66,30 +90,28 @@
         <div class="col-sm-12" id="bottom-status">
 
         </div>
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-            <div class="list-group">
-                <a href="#" class="list-group-item active">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-            </div>
-        </div><!--/.sidebar-offcanvas-->
 
         <!-- Content end -->
 
         <!-- CDN -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
 
         <!-- Local -->
         <script src="js/ripples.js"></script>
         <script src="js/material.js"></script>
+
+        <script type="text/javascript">
+            $('.navbar-toggle').click( function() {
+                $('span.mdi-action-favorite-outline').removeClass('mdi-action-favorite-outline').addClass('mdi-action-favorite');
+            });
+
+            $('.close-modal').click( function() {
+                $('span.mdi-action-favorite').removeClass('mdi-action-favorite').addClass('mdi-action-favorite-outline');              
+            });
+
+        </script>
 
         <!-- Initiate Material Library -->
         <script>

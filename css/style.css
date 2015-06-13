@@ -53,6 +53,14 @@ body {
 	z-index: -999;
 }
 
+.navmenu {
+	width: 150px;
+}
+
+#modal {
+	margin-top: 60px;
+}
+
 ::-webkit-input-placeholder {
    color: red;
 }
