@@ -1,9 +1,5 @@
 body {
-	background-color: #fff;
-}
-
-.navbar.navbar, .navbar-default.navbar {
-	background-color: #F74553; /* Bright Pastel Red */
+	background-color: #eee;
 }
 
 .navbar .form-control {
@@ -11,8 +7,66 @@ body {
 	background-image: -webkit-linear-gradient(#fff, #fff), -webkit-linear-gradient(#d2d2d2, #d2d2d2);
 	background-image: -o-linear-gradient(#fff, #fff), -o-linear-gradient(#d2d2d2, #d2d2d2);
 	background-image: linear-gradient(#fff, #fff), linear-gradient(#d2d2d2, #d2d2d2);
+	color: #fff;
 }
 
-.btn-primary:not(.btn-link):not(.btn-flat) {
-  	background-color: #F74553;
+.navbar.navbar, .navbar-default.navbar {
+	background-color: transparent;
+	color: #F74553;
 }
+
+.navbar-form {
+	border: 0;
+}
+
+.panel {
+	margin-bottom: 10px;
+}
+
+.heading {
+	margin-bottom: 84px;
+}
+
+#cart {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	z-index: 999;
+}
+
+#bottom-status {
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+	background-color: white;
+	height: 50px;
+	width: 100%;
+}
+
+#top-bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: transparent url("../img/pomegranate.jpg") no-repeat scroll center center / cover;
+	height: 250px;
+	width: 100%;
+	z-index: -999;
+}
+
+::-webkit-input-placeholder {
+   color: red;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: red;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: red;  
+}
+
+:-ms-input-placeholder {  
+   color: red;  
+}
+
+
