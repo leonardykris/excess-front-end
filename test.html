@@ -10,6 +10,7 @@
         <link href="css/material-fullpalette.css" rel="stylesheet">
         <link href="css/ripples.css" rel="stylesheet">        
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/jquery.nouislider.css" rel="stylesheet">
     </head>
     <body>
         <!-- Content start -->
@@ -49,38 +50,223 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h4 class="text-muted text-center heading">1 in 4 calories is never consumed, they're thrown away. We know they deserved a better place.</h4>
-                    <div class="panel panel-default">
+                    <div class="panel panel-default" data-sr='wait 0.8s, reset'>
                         <div class="panel-body">
                             <div class="clearfix">
-                                <img src="img/1-carrot.jpg" class="img-responsive img-circle pull-left" width="48">
-                                <h4 class="item-title">Carrots</h4>
+                                <img src="img/1-milk.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">HL Marigold Milk</h4>
                                 <p class="item-content">From <span>RM2.80</span> <span>(TESCO)</span></p>
-                                <a href="#" class="pull-right"><span class="mdi-content-add"></span></a>
-                            </div>
-                        </div>
-                    </div><div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="clearfix">
-                                <img src="img/1-asparagus.jpg" class="img-responsive img-circle pull-left" width="48">
-                                <h4 class="item-title">Asparagus</h4>
-                                <p class="item-content">From <span>RM2.80</span> <span>(TESCO)</span></p>
-                                <a href="#" class="pull-right"><span class="mdi-content-add"></span></a>
-                            </div>
-                        </div>
-                    </div><div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="clearfix">
-                                <img src="img/1-cabbage.jpg" class="img-responsive img-circle pull-left" width="48">
-                                <h4 class="item-title">Cabbage</h4>
-                                <p class="item-content">From <span>RM2.80</span> <span>(TESCO)</span></p>
-                                <a href="#" class="pull-right"><span class="mdi-content-add"></span></a>
+                                <a href="#">
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input class="box" type="checkbox" value="milk" autocomplete="off">
+                                        </label>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
+                    <div class="panel panel-default" data-sr='wait 0.8s, reset'>
                         <div class="panel-body">
-                            Panel content
+                            <div class="clearfix">
+                                <img src="img/1-tomato.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">Local Tomatoes</h4>
+                                <p class="item-content">From <span>RM2.80</span> <span>(Giant)</span></p>
+                                <a href="#">
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input class="box" type="checkbox" value="tomatoes" autocomplete="off">
+                                        </label>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
+                    </div>
+                    <div class="panel panel-default" data-sr='wait 0.8s, reset'>
+                        <div class="panel-body">
+                            <div class="clearfix">
+                                <img src="img/1-sausage.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">Bratwurst Sausages</h4>
+                                <p class="item-content">From <span>RM2.80</span> <span>(AEON BIG)</span></p>
+                                <a href="#">
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input class="box" type="checkbox" value="sausage" autocomplete="off">
+                                        </label>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" data-sr='wait 0.8s, reset'>
+                        <div class="panel-body">
+                            <div class="clearfix">
+                                <img src="img/1-milk.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">HL Marigold Milk</h4>
+                                <p class="item-content">From <span>RM2.80</span> <span>(TESCO)</span></p>
+                                <a href="#">
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input class="box" type="checkbox" value="milk" autocomplete="off">
+                                        </label>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" data-sr='wait 0.8s, reset'>
+                        <div class="panel-body">
+                            <div class="clearfix">
+                                <img src="img/1-tomato.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">Local Tomatoes</h4>
+                                <p class="item-content">From <span>RM2.80</span> <span>(Giant)</span></p>
+                                <a href="#">
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input class="box" type="checkbox" value="tomatoes" autocomplete="off">
+                                        </label>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" data-sr='wait 0.8s, reset'>
+                        <div class="panel-body">
+                            <div class="clearfix">
+                                <img src="img/1-sausage.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">Bratwurst Sausages</h4>
+                                <p class="item-content">From <span>RM2.80</span> <span>(AEON BIG)</span></p>
+                                <a href="#">
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input class="box" type="checkbox" value="sausage" autocomplete="off">
+                                        </label>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" data-sr='wait 0.8s, reset'>
+                        <div class="panel-body">
+                            <div class="clearfix">
+                                <img src="img/1-milk.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">HL Marigold Milk</h4>
+                                <p class="item-content">From <span>RM2.80</span> <span>(TESCO)</span></p>
+                                <a href="#">
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input class="box" type="checkbox" value="milk" autocomplete="off">
+                                        </label>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" data-sr='wait 0.8s, reset'>
+                        <div class="panel-body">
+                            <div class="clearfix">
+                                <img src="img/1-tomato.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">Local Tomatoes</h4>
+                                <p class="item-content">From <span>RM2.80</span> <span>(Giant)</span></p>
+                                <a href="#">
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input class="box" type="checkbox" value="tomatoes" autocomplete="off">
+                                        </label>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" data-sr='wait 0.8s, reset'>
+                        <div class="panel-body">
+                            <div class="clearfix">
+                                <img src="img/1-sausage.jpg" class="img-responsive img-circle pull-left" width="48">
+                                <h4 class="item-title">Bratwurst Sausages</h4>
+                                <p class="item-content">From <span>RM2.80</span> <span>(AEON BIG)</span></p>
+                                <a href="#">
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input class="box" type="checkbox" value="sausage" autocomplete="off">
+                                        </label>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" data-sr='wait 0.8s, reset'>
+                        <div class="panel-body">
+                            We will include more contents in the future! <a>Suggest us some partners!</a>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="quantity" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close close-modal" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Select Quantity</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="">
+                                        <input class="form-control" id="itemQuantity" placeholder="Number of items" type="number">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="ok" type="button" class="btn btn-default close-modal" data-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="modal fade" id="carts" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close close-modal" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Cart:</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table table-striped">
+                                        <tr>
+                                            <th class="col-sm-9">Item</th>
+                                            <th class="col-sm-1">Q</th>
+                                            <th class="col-sm-2">Price</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Sugar</td>
+                                            <td>4</td>
+                                            <td>6.40</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="reserve" type="button" class="btn btn-default close-modal" data-dismiss="modal">Reserve</button>
+                                    <button id="purchase" type="button" class="btn btn-success close-modal" data-dismiss="modal" data-toggle="modal" data-target="#phone">Purchase</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="modal fade" id="phone" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close close-modal" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Contact Number</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Thank you for helping us creating a waste free environment, to confirm your orders, we will need your phone number in order to identify you upon collection of the items.
+                                    </p>
+                                    <input id="phoneNum" type="tel" class="form-control" placeholder="(60) 17 - 391 - xxxx">
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="purchase" type="button" class="btn btn-success close-modal" data-dismiss="modal">Confirm</button>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -89,13 +275,15 @@
                     
                 </div>
             </div>
-            <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised mdi-action-shopping-cart" id="cart"></a>
+            <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised mdi-action-shopping-cart" id="cart" data-toggle="modal" data-target="#carts"></a>
         </div>
         <div class="col-sm-12" id="top-bg">
             
         </div>
         <div class="col-sm-12" id="bottom-status">
-
+            <p class="status text-center">
+                Hello there!
+            </p>
         </div>
 
         <!-- Content end -->
@@ -108,31 +296,60 @@
         <!-- Local -->
         <script src="js/ripples.js"></script>
         <script src="js/material.js"></script>
-
-        <script type="text/javascript">
-            $('.navbar-toggle').click( function() {
-                $('span.mdi-action-favorite-outline').removeClass('mdi-action-favorite-outline').addClass('mdi-action-favorite');
-            });
-
-            $('.close-modal').click( function() {
-                $('span.mdi-action-favorite').removeClass('mdi-action-favorite').addClass('mdi-action-favorite-outline');              
-            });
-
-            $('.pull-right.mdi-content-add').click( function() {
-                $(this).removeClass('mdi-content-add').addClass('mdi-action-done');
-            });
-
-            $('.pull-right.mdi-action-done').click( function() {
-                $(this).removeClass('mdi-action-done').addClass('mdi-content-add');
-            });
-
-        </script>
+        <script src="js/jquery.nouislider.js"></script>
+        <script src="js/scrollReveal.js"></script>
 
         <!-- Initiate Material Library -->
         <script>
+            window.sr = new scrollReveal();
+            var items = [];
+            var quantity = [];
+
             $(document).ready(function() {
                 // This command is used to initialize some elements and make them work properly
                 $.material.init();
+
+                $('.navbar-toggle').click( function() {
+                    $('span.mdi-action-favorite-outline').removeClass('mdi-action-favorite-outline').addClass('mdi-action-favorite');
+                });
+
+                $('.close-modal').click( function() {
+                    $('span.mdi-action-favorite').removeClass('mdi-action-favorite').addClass('mdi-action-favorite-outline');              
+                });
+
+                $('input[type=checkbox]').on("change", function(){
+                    // alert($(this).val());
+                    if(this.checked) {
+                        items.push($(this).val());
+                        $('#quantity').modal('show');
+                    }
+                    else {
+                        $('.status').html('Canceling?');
+                    }                    
+                });
+
+                $('#ok').on('click', function() {
+                    var num = $('#itemQuantity').val();
+                    quantity.push(num);
+                    $('.status').html(num + ' items added to Cart!');
+                });
+
+                $('#cart').on('click', function() {
+                    var cart = '';
+
+                    for (var i = 0; i < items.length; i++) {
+                        var temp = i + '. ' + items[i] + ': ' + quantity[i] + '. ';
+                        cart += temp;
+                    };
+
+                    // alert(cart);
+                });
+
+                $('#purchase').on('click', function() {
+                    $('.status').html(' Thank you for the purchase!');
+                });
+
+
             });
         </script>
     </body>
