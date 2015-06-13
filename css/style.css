@@ -1,0 +1,18 @@
+body {
+	background-color: #fff;
+}
+
+.navbar.navbar, .navbar-default.navbar {
+	background-color: #F74553; /* Bright Pastel Red */
+}
+
+.navbar .form-control {
+	border: 0;
+	background-image: -webkit-linear-gradient(#fff, #fff), -webkit-linear-gradient(#d2d2d2, #d2d2d2);
+	background-image: -o-linear-gradient(#fff, #fff), -o-linear-gradient(#d2d2d2, #d2d2d2);
+	background-image: linear-gradient(#fff, #fff), linear-gradient(#d2d2d2, #d2d2d2);
+}
+
+.btn-primary:not(.btn-link):not(.btn-flat) {
+  	background-color: #F74553;
+}
