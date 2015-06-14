@@ -242,7 +242,7 @@
                                     </table>
                                 </div>
                                 <div class="modal-footer">
-                                    <button id="reserve" type="button" class="btn btn-default close-modal" data-dismiss="modal">Reserve</button>
+                                    <button id="reserve" type="button" class="btn btn-default close-modal" data-dismiss="modal" data-toggle="modal" data-target="#phone">Reserve</button>
                                     <button id="purchase" type="button" class="btn btn-success close-modal" data-dismiss="modal" data-toggle="modal" data-target="#phone">Purchase</button>
                                 </div>
                             </div>
@@ -263,7 +263,56 @@
                                     <input id="phoneNum" type="tel" class="form-control" placeholder="(60) 17 - 391 - xxxx">
                                 </div>
                                 <div class="modal-footer">
-                                    <button id="purchase" type="button" class="btn btn-success close-modal" data-dismiss="modal">Confirm</button>
+                                    <button id="purchase" type="button" class="btn btn-success close-modal" data-dismiss="modal" data-toggle="modal" data-target="#payment">Confirm</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="modal fade" id="payment" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close close-modal" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Payment Details</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        One last important thing: your card details!
+                                    </p>
+                                    <label for="name">Name:</label>
+                                    <input id="name" type="text" class="form-control" placeholder="Mr/Ms Awesome">
+                                    <label for="creditcard">Card Number:</label>
+                                    <input id="creditcard" type="text" class="form-control" placeholder="xxxx xxxx xxxx xxxx">
+                                    <label for="month">Month</label>
+                                    <select id="month" name="month" class="form-control">
+                                       <option value="January">January</option>
+                                         <option value="February">February</option>
+                                         <option value="March">March</option>
+                                         <option value="April">April</option>
+                                         <option value="May">May</option>
+                                         <option value="June">June</option>
+                                         <option value="July">July</option>
+                                         <option value="August">August</option>
+                                         <option value="September">September</option>
+                                         <option value="October">October</option>
+                                         <option value="November">November</option>
+                                         <option value="December">December</option>
+                                    </select>
+                                    <label class="control-label" for="year">Year</label>  
+                                    <select id="year" name="year" class="form-control">
+                                          <option value="2015">2015</option>
+                                          <option value="2016">2016</option>
+                                          <option value="2017">2017</option>
+                                          <option value="2018">2018</option>
+                                          <option value="2019">2019</option>
+                                          <option value="2020">2020</option>
+                                    </select>
+                                    <label for="security">Security Number</label>
+                                    <input id="security" type="text" class="form-control" placeholder="xxx">
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="finish" type="button" class="btn btn-success close-modal" data-dismiss="modal">Confirm</button>
                                 </div>
                             </div>
                         </div> 
