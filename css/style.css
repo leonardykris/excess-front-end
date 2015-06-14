@@ -95,6 +95,12 @@ h4.item-title {
 	margin-top: 15px;
 }
 
+.navbar-brand img.img, .navbar-brand img {
+	display: inline;
+	vertical-align: baseline;
+	margin-right: 5px;
+}
+
 ::-webkit-input-placeholder {
    color: red;
 }
