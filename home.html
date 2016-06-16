@@ -8,7 +8,7 @@
         <!-- Local -->
         <link href="css/roboto.css" rel="stylesheet">
         <link href="css/material-fullpalette.css" rel="stylesheet">
-        <link href="css/ripples.css" rel="stylesheet">        
+        <link href="css/ripples.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/jquery.nouislider.css" rel="stylesheet">
     </head>
@@ -43,7 +43,7 @@
                         <button type="button" class="btn btn-default close-modal" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
 
         <div class="container">
@@ -217,7 +217,7 @@
                                     <button id="ok" type="button" class="btn btn-default close-modal" data-dismiss="modal">OK</button>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
 
                     <div class="modal fade" id="carts" role="dialog">
@@ -246,7 +246,7 @@
                                     <button id="purchase" type="button" class="btn btn-success close-modal" data-dismiss="modal" data-toggle="modal" data-target="#phone">Purchase</button>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
 
                     <div class="modal fade" id="phone" role="dialog">
@@ -266,7 +266,7 @@
                                     <button id="purchase" type="button" class="btn btn-success close-modal" data-dismiss="modal" data-toggle="modal" data-target="#payment">Confirm</button>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
 
                     <div class="modal fade" id="payment" role="dialog">
@@ -299,7 +299,7 @@
                                          <option value="November">November</option>
                                          <option value="December">December</option>
                                     </select>
-                                    <label class="control-label" for="year">Year</label>  
+                                    <label class="control-label" for="year">Year</label>
                                     <select id="year" name="year" class="form-control">
                                           <option value="2015">2015</option>
                                           <option value="2016">2016</option>
@@ -315,19 +315,19 @@
                                     <button id="finish" type="button" class="btn btn-success close-modal" data-dismiss="modal">Confirm</button>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    
+
                 </div>
             </div>
             <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised mdi-action-shopping-cart" id="cart" data-toggle="modal" data-target="#carts"></a>
         </div>
         <div class="col-sm-12" id="top-bg">
-            
+
         </div>
         <div class="col-sm-12" id="bottom-status">
             <p class="status text-center">
@@ -363,7 +363,7 @@
                 });
 
                 $('.close-modal').click( function() {
-                    $('span.mdi-action-favorite').removeClass('mdi-action-favorite').addClass('mdi-action-favorite-outline');              
+                    $('span.mdi-action-favorite').removeClass('mdi-action-favorite').addClass('mdi-action-favorite-outline');
                 });
 
                 $('input[type=checkbox]').on("change", function(){
@@ -374,7 +374,7 @@
                     }
                     else {
                         $('.status').html('Canceling?');
-                    }                    
+                    }
                 });
 
                 $('#ok').on('click', function() {
